@@ -22,24 +22,23 @@
 
   方法2：先下载ps1文件到本地，修改下载路径后运行。
 
-  [1]首先去https://claude.ai/install.ps1官网下载bootstrap.ps1文件到本地；
-  [2]修改其中约第24行代码
-    原先
-    $DOWNLOAD_DIR = "$env:USERPROFILE\.claude\downloads"
-    改为新的（添加你自己的路径）
-    $DOWNLOAD_DIR = "D:\ClaudeCode\.claude\downloads"
-  [3]注释掉安装代码以及自行添加安装结束的提示代码
-    注释掉从# Run claude install to set up launcher and shell integration到最后的代码
-    添加安装结束的提示代码可以由DeepSeek生成
-    
-  [4]在PowerShell中运行bootstrap.ps1
-    
-  [5]配置Path
-    搜索系统环境变量-->环境变量-->用户变量-->编辑已存在的Path-->新建-->将ClaudeCode.exe所在的文件夹位置写入-->确定-->确定
-  [6]测试是否配置成功
-    在新开的PowerShell中运行
-    
-    
-  
+    [1]首先去https://claude.ai/install.ps1官网下载bootstrap.ps1文件到本地；
+    [2]修改其中约第24行代码
+      原先
+      $DOWNLOAD_DIR = "$env:USERPROFILE\.claude\downloads"
+      改为新的（添加你自己的路径）
+      $DOWNLOAD_DIR = "D:\ClaudeCode\.claude\downloads"
+    [3]注释掉安装代码以及自行添加安装结束的提示代码
+      注释掉从# Run claude install to set up launcher and shell integration到最后的代码
+      添加安装结束的提示代码可以由DeepSeek生成  
+    [4]在PowerShell中运行bootstrap.ps1
+![安装结束示意图](./image/ClaudeCode_1.png)
 
+    [5]配置Path
+      搜索系统环境变量-->环境变量-->用户变量-->编辑已存在的Path-->新建-->将ClaudeCode.exe所在的文件夹位置写入-->确定-->确定
+    [6]测试是否配置成功
+      在新开的PowerShell中运行
+      
+![安装结束示意图](./image/ClaudeCode_2.png)
+    
 ## 二、
